@@ -1,4 +1,4 @@
-package test;
+package tasks.test;
 
 import tasks.countOfWords.WordCounter;
 import tasks.jsonFolder.FromFileToGson;
