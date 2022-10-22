@@ -43,9 +43,11 @@ public class FromFileToGson {
             String json = gson.toJson(person);
 
             System.out.println(json);
-        } catch (FileNotFoundException e) {
+
+            OutputStream fos = new FileOutputStream("user.json");
+            fos.write(json.getBytes());
+        } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }
