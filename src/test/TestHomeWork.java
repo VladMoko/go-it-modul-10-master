@@ -4,19 +4,20 @@ import tasks.countOfWords.WordCounter;
 import tasks.jsonFolder.FromFileToGson;
 import tasks.phoneNumber.FilterForPhoneNumber;
 
+import java.io.IOException;
+
 public class TestHomeWork {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         FilterForPhoneNumber filter = new FilterForPhoneNumber();
-        WordCounter wordCounter = new WordCounter();
         FromFileToGson person = new FromFileToGson();
+        WordCounter wordCounter = new WordCounter();
 
         filter.writingPhoneNumber();
         filter.checkingPhoneNumber();
 
         System.out.println();
 
-        wordCounter.creatorFile();
         wordCounter.counter();
 
         System.out.println();
